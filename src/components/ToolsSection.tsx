@@ -1,8 +1,21 @@
 import ToolCard from "./ToolCard";
-import { Activity, Calculator, Target } from "lucide-react";
+import { Activity, Calculator, Target, Brain } from "lucide-react";
 
 const ToolsSection = () => {
   const tools = [
+    {
+      icon: Brain,
+      title: "Skills Benchmark",
+      description: "Test your DevOps knowledge with MCQ assessments across Kubernetes, Terraform, CI/CD, and AWS.",
+      features: [
+        "10-question assessments per technology track",
+        "Instant proficiency tier (Beginner to Expert)",
+        "Performance breakdown by difficulty level",
+        "Personalized course recommendations"
+      ],
+      href: "/skills-benchmark",
+      accentColor: "primary" as const
+    },
     {
       icon: Activity,
       title: "DevOps Maturity Assessment",
@@ -14,7 +27,7 @@ const ToolsSection = () => {
         "Exportable executive summary report"
       ],
       href: "/assessment",
-      accentColor: "primary" as const
+      accentColor: "accent" as const
     },
     {
       icon: Calculator,
@@ -27,7 +40,7 @@ const ToolsSection = () => {
         "Generate stakeholder-ready ROI reports"
       ],
       href: "/roi-calculator",
-      accentColor: "accent" as const
+      accentColor: "primary" as const
     },
     {
       icon: Target,
@@ -40,7 +53,7 @@ const ToolsSection = () => {
         "Track progress over time"
       ],
       href: "/skills-analyzer",
-      accentColor: "primary" as const
+      accentColor: "accent" as const
     }
   ];
 
@@ -56,7 +69,7 @@ const ToolsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {tools.map((tool, index) => (
             <ToolCard key={index} {...tool} />
           ))}

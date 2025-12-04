@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Assessment from "./pages/Assessment";
 import ROICalculator from "./pages/ROICalculator";
 import SkillsAnalyzer from "./pages/SkillsAnalyzer";
+import SkillsBenchmark from "./pages/SkillsBenchmark";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/assessment" element={<Assessment />} />
           <Route path="/roi-calculator" element={<ROICalculator />} />
           <Route path="/skills-analyzer" element={<SkillsAnalyzer />} />
+          <Route path="/skills-benchmark" element={<SkillsBenchmark />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
