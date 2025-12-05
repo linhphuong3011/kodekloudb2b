@@ -1,21 +1,8 @@
 import ToolCard from "./ToolCard";
-import { Activity, Calculator, Target, Brain } from "lucide-react";
+import { Activity, Calculator, Target } from "lucide-react";
 
 const ToolsSection = () => {
   const tools = [
-    {
-      icon: Brain,
-      title: "Skills Benchmark",
-      description: "Test your DevOps knowledge with MCQ assessments across Kubernetes, Terraform, CI/CD, and AWS.",
-      features: [
-        "10-question assessments per technology track",
-        "Instant proficiency tier (Beginner to Expert)",
-        "Performance breakdown by difficulty level",
-        "Personalized course recommendations"
-      ],
-      href: "/skills-benchmark",
-      accentColor: "primary" as const
-    },
     {
       icon: Activity,
       title: "DevOps Maturity Assessment",
