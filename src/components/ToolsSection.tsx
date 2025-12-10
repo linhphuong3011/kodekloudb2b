@@ -40,7 +40,7 @@ const ToolsSection = () => {
             Free Tools for <span className="text-gradient">Engineering Leaders</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Make data-driven decisions about your team's development with our enterprise-grade assessment tools.
+            No more guessing what your engineering team needs to learn. Uncover what's slowing your team down, and the fix.
           </p>
         </div>
 
