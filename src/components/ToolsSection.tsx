@@ -1,5 +1,5 @@
 import ToolCard from "./ToolCard";
-import { Calculator, Target } from "lucide-react";
+import { Calculator, Target, Users } from "lucide-react";
 
 const ToolsSection = () => {
   const tools = [
@@ -28,6 +28,19 @@ const ToolsSection = () => {
       ],
       href: "/skills-analyzer",
       accentColor: "accent" as const
+    },
+    {
+      icon: Users,
+      title: "DevOps Learning Persona",
+      description: "Help your team learn in their own way. What type of learners are there in your team?",
+      features: [
+        "Discover your team's learning styles",
+        "6 unique DevOps learner personas",
+        "Personalized learning recommendations",
+        "Optimize team training approaches"
+      ],
+      href: "/learning-persona",
+      accentColor: "primary" as const
     }
   ];
 
@@ -43,7 +56,7 @@ const ToolsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {tools.map((tool, index) => (
             <ToolCard key={index} {...tool} />
           ))}
