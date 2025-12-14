@@ -30,7 +30,7 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-slide-up" style={{
           animationDelay: '0.1s'
         }}>
-            Free assessment tools designed for engineering leaders. Measure team maturity, 
+            Free assessments designed for engineering leaders. Measure team maturity, 
             calculate training ROI, and identify critical skill gaps.
           </p>
 
