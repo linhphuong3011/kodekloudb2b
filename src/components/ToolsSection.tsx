@@ -4,6 +4,19 @@ import { Calculator, Target, Users } from "lucide-react";
 const ToolsSection = () => {
   const tools = [
     {
+      icon: Users,
+      title: "DevOps Learning Persona",
+      description: "Help your team learn in their own way. What type of learners are there in your team?",
+      features: [
+        "Discover your team's learning styles",
+        "6 unique DevOps learner personas",
+        "Personalized learning recommendations",
+        "Optimize team training approaches"
+      ],
+      href: "/learning-persona",
+      accentColor: "primary" as const
+    },
+    {
       icon: Calculator,
       title: "Training ROI Calculator",
       description: "Calculate the business impact of investing in DevOps and Cloud training for your engineering teams.",
@@ -28,19 +41,6 @@ const ToolsSection = () => {
       ],
       href: "/skills-analyzer",
       accentColor: "accent" as const
-    },
-    {
-      icon: Users,
-      title: "DevOps Learning Persona",
-      description: "Help your team learn in their own way. What type of learners are there in your team?",
-      features: [
-        "Discover your team's learning styles",
-        "6 unique DevOps learner personas",
-        "Personalized learning recommendations",
-        "Optimize team training approaches"
-      ],
-      href: "/learning-persona",
-      accentColor: "primary" as const
     }
   ];
 
