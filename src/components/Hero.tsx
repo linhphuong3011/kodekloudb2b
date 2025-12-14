@@ -1,22 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Sparkles, Users, TrendingUp } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-subtle" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{
+      animationDelay: '-3s'
+    }} />
       
       {/* Grid pattern */}
-      <div 
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
-        }}
-      />
+      <div className="absolute inset-0 opacity-[0.03]" style={{
+      backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
+      backgroundSize: '60px 60px'
+    }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -30,12 +27,16 @@ const Hero = () => {
             <br />DevOps Team
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-slide-up" style={{
+          animationDelay: '0.1s'
+        }}>
             Free assessment tools designed for engineering leaders. Measure team maturity, 
             calculate training ROI, and identify critical skill gaps.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-slide-up" style={{
+          animationDelay: '0.2s'
+        }}>
             <Button variant="hero" size="xl" asChild>
               <a href="#tools">
                 Explore Free Tools
@@ -50,7 +51,9 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: '0.3s' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto animate-slide-up" style={{
+          animationDelay: '0.3s'
+        }}>
             <div className="glass rounded-xl p-6">
               <div className="flex items-center justify-center gap-3 mb-2">
                 <Users className="w-5 h-5 text-primary" />
@@ -61,7 +64,7 @@ const Hero = () => {
             <div className="glass rounded-xl p-6">
               <div className="flex items-center justify-center gap-3 mb-2">
                 <TrendingUp className="w-5 h-5 text-primary" />
-                <span className="text-3xl font-bold text-foreground">500+</span>
+                <span className="text-3xl font-bold text-foreground">800+</span>
               </div>
               <p className="text-sm text-muted-foreground">Enterprise Clients</p>
             </div>
@@ -75,8 +78,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
