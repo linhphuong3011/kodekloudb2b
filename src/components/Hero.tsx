@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">Free Enterprise DevOps Tools</span>
+            <span className="text-sm text-primary font-medium">Continuous Learning starts here ols</span>
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-slide-up">
@@ -29,10 +29,7 @@ const Hero = () => {
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-slide-up" style={{
           animationDelay: '0.1s'
-        }}>
-            Free assessments designed for engineering leaders. Measure team maturity, 
-            calculate training ROI, and identify critical skill gaps.
-          </p>
+        }}>Discover your team’s learning types, identify skill gaps, and connect upskilling to delivery outcomes.</p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-slide-up" style={{
           animationDelay: '0.2s'
